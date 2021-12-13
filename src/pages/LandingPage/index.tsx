@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavBar } from '../../components/NavBar';
 import { NFTItem } from '../../components/NFTItem';
 
@@ -9,18 +9,9 @@ function LandingPage() {
     <ContainerLandingPage>
       <NavBar />
       <NFTItemsWrapper>
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
-        <NFTItem />
+        {[...Array(12)].map((id) => (
+          <NFTItem key={id} />
+        ))}
       </NFTItemsWrapper>
     </ContainerLandingPage>
   );

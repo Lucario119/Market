@@ -1,9 +1,11 @@
 import React from 'react';
+import { useMoralis } from 'react-moralis';
 import { Link } from 'react-router-dom';
 
 import { ContainerNavBar, NavBarMenu } from './styles';
 
 export function NavBar() {
+  const { logout, authenticate, isAuthenticated } = useMoralis();
   return (
     <ContainerNavBar>
       <h1>NFT SALE</h1>
@@ -17,6 +19,11 @@ export function NavBar() {
           </li>
         </ul>
       </NavBarMenu>
+      {isAuthenticated ? (
+        <button onClick={() => logout()}>Logout</button>
+      ) : (
+        <button onClick={() => authenticate()}>Conectar com a Metamask</button>
+      )}
     </ContainerNavBar>
   );
 }

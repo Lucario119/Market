@@ -11,6 +11,9 @@ export default createGlobalStyle`
     text-decoration: none;
 
 }
+button{
+    cursor:pointer;
+}
 ul{
     list-style: none;
 }
