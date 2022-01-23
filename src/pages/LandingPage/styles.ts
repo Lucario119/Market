@@ -11,7 +11,7 @@ export const ContainerLandingPage = styled.div`
 
 export const NFTItemsWrapper = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 `;
