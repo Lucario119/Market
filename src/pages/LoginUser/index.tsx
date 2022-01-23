@@ -39,6 +39,7 @@ function LoginUser() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </fieldset>
         <fieldset>
@@ -47,6 +48,7 @@ function LoginUser() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </fieldset>
         <button type="submit">Login</button>

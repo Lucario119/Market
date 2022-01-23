@@ -38,6 +38,7 @@ function RegisterUser() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            required
           />
         </fieldset>
 
@@ -47,6 +48,7 @@ function RegisterUser() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </fieldset>
         <fieldset>
@@ -55,6 +57,7 @@ function RegisterUser() {
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </fieldset>
         <button type="submit">Sign-Up</button>
