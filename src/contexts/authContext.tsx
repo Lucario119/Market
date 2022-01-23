@@ -38,8 +38,8 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
     }
 
     setAdmin(
-      user?.email === process.env.REACT_APP_ADMIN_EMAIL &&
-        user?.password === process.env.REACT_APP_ADMIN_PASSWORD
+      user?.email === 'admin@admin.com' &&
+        user?.password === 'adminpassword'
     );
   }, [user?.email, user?.password]);
 
