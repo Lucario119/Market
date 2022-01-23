@@ -18,7 +18,10 @@ function LoginUser() {
       email: email,
       password: password,
     });
-    if (email === '34182522@admin.com' && password === 'mypassword') {
+    if (
+      email === process.env.REACT_APP_ADMIN_EMAIL &&
+      password === process.env.REACT_APP_ADMIN_PASSWORD
+    ) {
       navigate('/admin');
     }
   }

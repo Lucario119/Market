@@ -18,7 +18,7 @@ function LandingPage() {
   useEffect(() => {
     api.get('api/explore').then((response) => setNftItems(response.data));
   }, []);
-
+  console.log(process.env.REACT_APP_ADMIN_EMAIL);
   return (
     <ContainerLandingPage>
       <NavBar />
