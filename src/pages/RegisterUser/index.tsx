@@ -2,6 +2,7 @@ import React, { FormEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
 import api from '../../services/api';
+import Logo from '../../assets/LOGO (1).png';
 
 import { Container } from './styles';
 
@@ -31,6 +32,8 @@ function RegisterUser() {
   }
   return (
     <Container>
+      <img src={Logo} alt="cryto_racing" />
+
       <form onSubmit={handleRegisterNewUser}>
         <fieldset>
           <label htmlFor="">Name: </label>

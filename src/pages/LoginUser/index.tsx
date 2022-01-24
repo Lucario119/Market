@@ -1,6 +1,7 @@
 import React, { FormEvent, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
+import Logo from '../../assets/LOGO (1).png';
 
 import { Container } from './styles';
 
@@ -29,6 +30,7 @@ function LoginUser() {
 
   return (
     <Container>
+      <img src={Logo} alt="cryto_racing" />
       <form onSubmit={handleSubmit}>
         <fieldset>
           <label htmlFor="">Email: </label>

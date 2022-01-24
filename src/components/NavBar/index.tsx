@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { useMoralis } from 'react-moralis';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
-import Logo from '../../assets/LOGO (4).png';
+import Logo from '../../assets/LOGO.png';
 import { ContainerNavBar, NavBarMenu } from './styles';
 
 export function NavBar() {

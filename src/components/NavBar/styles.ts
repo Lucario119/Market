@@ -23,8 +23,8 @@ export const ContainerNavBar = styled.nav`
 export const NavBarMenu = styled.div`
   display: flex;
   align-items: center;
-  gap: 22rem;
-
+  justify-content: space-between;
+  width: 70%;
   > ul {
     display: flex;
     gap: 7rem;

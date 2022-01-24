@@ -5,7 +5,12 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 5rem;
+  flex-direction: column;
+  > img {
+    width: 10rem;
+    height: 10rem;
+  }
   > form {
     padding: 1rem;
 

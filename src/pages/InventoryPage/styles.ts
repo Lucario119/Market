@@ -39,7 +39,8 @@ export const InventoryItem = styled.div`
     font-size: 2.4ch;
   }
   > img {
-    flex: 1;
+    width: 15rem;
+    height: 15rem;
   }
   > span {
     margin-top: 1rem;
